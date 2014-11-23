@@ -46,7 +46,7 @@ typedef NSUInteger SVPullToRefreshState;
 @property (nonatomic, strong, readonly) UILabel *titleLabel;
 @property (nonatomic, strong, readonly) UILabel *subtitleLabel;
 @property (nonatomic, readwrite) UIActivityIndicatorViewStyle activityIndicatorViewStyle;
-@property (nonatomic, assign) id <SVPullToRefreshDeleagate> delegate;
+@property (nonatomic, weak) id <SVPullToRefreshDeleagate> delegate;
 
 @property (nonatomic, readonly) SVPullToRefreshState state;
 
